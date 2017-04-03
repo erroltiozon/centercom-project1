@@ -1943,9 +1943,11 @@ a {
 .main-wrapper .background-img {
   background: url("../../../assets/img/background_img.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
-  min-height: 100vh;
-  position: relative; }
+  min-height: 100vh; }
 
 .widget-wrapper {
   margin: 1.5em 0; }
