@@ -1,0 +1,96 @@
+.login-wrapper{
+	position: relative;
+	.row{
+		margin-top: 6em;
+		margin-bottom: 6em;
+
+		.form-content{
+			background: $white;
+			padding: 5em 1em;
+			float: none;
+			margin: 0 auto;
+
+
+			header{
+				@include oswald-regular;
+				margin-bottom: 2.5em;
+				line-height: 24px;
+				margin: 2.5em auto;
+				padding: 0;
+				width: 38vw;
+
+				h1 {
+					margin-bottom: 1em;
+				}
+
+				p {
+					@include roboto-light;
+				}
+			}
+
+			.made-in-usa{
+				width: 150px;
+			    left: -1em;
+			    position: absolute;
+			    top: -2%;
+			}
+
+			.form-list {
+				margin: 0;
+
+				li{
+					display: inline-block;
+					float: none;
+					margin-bottom: 1em;
+					padding: 0; //edited 04/03/17
+					text-align: left;
+					width: 30vw;//edited 04/03/17
+
+					label{
+						@include roboto-light;
+						display: block;
+						margin-bottom: .5em;
+					}
+
+					textarea{
+						border: 1px solid #ccc;
+						border-radius: 5px;
+						height: 100px;
+						padding: .5em 1em;
+						width: 100%;
+					}
+				}
+			}
+
+			button{
+				@include roboto-bold;
+				background: $red;
+				border: none;
+				border-radius: 5px;
+				color: $white;
+				margin: 1em;
+			    width: 50%;
+			    padding: 1em 0;
+
+				&:hover {
+					background: darken($red, 10%);
+				}
+			}
+
+			p {
+				margin: 5px;
+			}
+
+			span{
+				color: #c00015;
+				font-weight: bold;
+			}
+		}
+
+		div {
+			float: none;
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+}

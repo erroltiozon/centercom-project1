@@ -1,0 +1,40 @@
+// Main Colors
+
+$blue           : #004583;
+$dark-blue      : #003769;
+$red            : #c00015;
+$dark-red       : #990011;
+$black          : #1a1a1a;
+$white          : #ffffff;
+
+$fb-color       : #3b5997;
+$twitter-color  : #5ea9e0;
+$pinterest-color: #b81818;
+$mail-color     : #70757b;
+
+// Fonts
+$roboto : 'Roboto Slab', serif;
+$oswald : 'Oswald', sans-serif;
+
+
+//Fonts Mixin
+
+@mixin roboto-light {
+    font-family: $roboto;
+    font-weight: 300;
+}
+
+@mixin roboto-bold {
+    font-family: $roboto;
+    font-weight: 700;
+}
+
+@mixin oswald-light {
+    font-family: $oswald;
+    font-weight: 200;
+}
+
+@mixin oswald-regular {
+    font-family: $oswald;
+    font-weight: 300;
+}
