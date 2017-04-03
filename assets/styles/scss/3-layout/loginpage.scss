@@ -6,9 +6,13 @@
 
 		.form-content{
 			background: $white;
-			padding: 5em 1em;
+			display: flex;
+			flex-direction:column;
 			float: none;
 			margin: 0 auto;
+			padding: 5em 1em;
+			text-align: center;
+
 
 
 			header{
@@ -20,6 +24,10 @@
 				width: 38vw;
 
 				h1 {
+					font-family: inherit;
+					font-size: 2em;
+					font-weight: 500;
+					line-height: 1.1;
 					margin-bottom: 1em;
 				}
 
@@ -36,6 +44,9 @@
 			}
 
 			.form-list {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
 				margin: 0;
 
 				li{
@@ -44,7 +55,7 @@
 					margin-bottom: 1em;
 					padding: 0; //edited 04/03/17
 					text-align: left;
-					width: 30vw;//edited 04/03/17
+					width: inherit;//edited 04/03/17
 
 					label{
 						@include roboto-light;
@@ -52,12 +63,23 @@
 						margin-bottom: .5em;
 					}
 
+					input {
+						border: 1px solid #ccc;
+						border-radius: 4px;
+				    background-image: none;
+				    background-color: #fff;
+						height: 2.5vw;
+						outline: none;
+				    width: 29vw;
+
+					}
+
 					textarea{
 						border: 1px solid #ccc;
 						border-radius: 5px;
 						height: 100px;
 						padding: .5em 1em;
-						width: 100%;
+						width: 29vw;
 					}
 				}
 			}
@@ -68,9 +90,9 @@
 				border: none;
 				border-radius: 5px;
 				color: $white;
-				margin: 1em;
-			    width: 50%;
-			    padding: 1em 0;
+				margin: auto;
+		    width: 40%;
+		    padding: 1em 0;
 
 				&:hover {
 					background: darken($red, 10%);
