@@ -36,6 +36,7 @@
 				}
 			}
 
+
 			.made-in-usa{
 				width: 150px;
 			    left: -1em;
@@ -115,4 +116,54 @@
 			padding: 0;
 		}
 	}
+}
+
+@include break(tablet){
+		.form-content {
+					header {
+							width:60vw;
+					}
+					.made-in-usa {
+							left:-1em;
+							top: 1%;
+							width: 120px;
+					}
+					.form-list {
+							input {
+								height: 5.5vw;
+								width: 50vw;
+							}
+							textarea {
+								width: 50vw;
+							}
+					}
+					button{
+						width: 45%;
+					}
+		}
+}
+
+@include break(phone){
+		.form-content {
+					header {
+							width:17em;
+					}
+					.made-in-usa {
+							left:-1em;
+							top: 1%;
+							width: 100px;
+					}
+					.form-list {
+							input {
+								height: 11.5vw;
+								width: 69vw;
+							}
+							textarea {
+								width: 69vw;
+							}
+					}
+					button{
+						width: 65%;
+					}
+		}
 }
