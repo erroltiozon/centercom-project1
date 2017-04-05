@@ -2174,11 +2174,25 @@ a {
         .login-wrapper .row .form-content header p {
           font-family: "Roboto Slab", serif;
           font-weight: 300; }
+      @media screen and (min-width: 740px) and (max-width: 1024px) {
+        .login-wrapper .row .form-content header {
+          width: 60vw; } }
+      @media screen and (min-width: 320px) and (max-width: 740px) {
+        .login-wrapper .row .form-content header {
+          width: 17em; } }
       .login-wrapper .row .form-content .made-in-usa {
         width: 150px;
         left: -1em;
         position: absolute;
         top: -2%; }
+      @media screen and (min-width: 740px) and (max-width: 1024px) {
+        .login-wrapper .row .form-content .made-in-usa {
+          top: -1%;
+          width: 120px; } }
+      @media screen and (min-width: 320px) and (max-width: 740px) {
+        .login-wrapper .row .form-content .made-in-usa {
+          top: -1%;
+          width: 100px; } }
       .login-wrapper .row .form-content .form-list {
         align-items: center;
         display: flex;
@@ -2204,12 +2218,26 @@ a {
             height: 2.5vw;
             outline: none;
             width: 29vw; }
+          @media screen and (min-width: 740px) and (max-width: 1024px) {
+            .login-wrapper .row .form-content .form-list li input {
+              height: 5.5vw;
+              width: 50vw; } }
+          @media screen and (min-width: 320px) and (max-width: 740px) {
+            .login-wrapper .row .form-content .form-list li input {
+              height: 11.5vw;
+              width: 69vw; } }
           .login-wrapper .row .form-content .form-list li textarea {
             border: 1px solid #ccc;
             border-radius: 5px;
             height: 100px;
             padding: .5em 1em;
             width: 29vw; }
+          @media screen and (min-width: 740px) and (max-width: 1024px) {
+            .login-wrapper .row .form-content .form-list li textarea {
+              width: 50vw; } }
+          @media screen and (min-width: 320px) and (max-width: 740px) {
+            .login-wrapper .row .form-content .form-list li textarea {
+              width: 69vw; } }
       .login-wrapper .row .form-content button {
         font-family: "Roboto Slab", serif;
         font-weight: 700;
@@ -2222,6 +2250,12 @@ a {
         padding: 1em 0; }
         .login-wrapper .row .form-content button:hover {
           background: #8d000f; }
+      @media screen and (min-width: 740px) and (max-width: 1024px) {
+        .login-wrapper .row .form-content button {
+          width: 45%; } }
+      @media screen and (min-width: 320px) and (max-width: 740px) {
+        .login-wrapper .row .form-content button {
+          width: 65%; } }
       .login-wrapper .row .form-content p {
         margin: 5px; }
       .login-wrapper .row .form-content span {
@@ -2232,34 +2266,6 @@ a {
       margin: 0 auto;
       padding: 0; }
 
-@media screen and (min-width: 740px) and (max-width: 1024px) {
-  .form-content header {
-    width: 60vw; }
-  .form-content .made-in-usa {
-    left: -1em;
-    top: 1%;
-    width: 120px; }
-  .form-content .form-list input {
-    height: 5.5vw;
-    width: 50vw; }
-  .form-content .form-list textarea {
-    width: 50vw; }
-  .form-content button {
-    width: 45%; } }
-@media screen and (min-width: 320px) and (max-width: 740px) {
-  .form-content header {
-    width: 17em; }
-  .form-content .made-in-usa {
-    left: -1em;
-    top: 1%;
-    width: 100px; }
-  .form-content .form-list input {
-    height: 11.5vw;
-    width: 69vw; }
-  .form-content .form-list textarea {
-    width: 69vw; }
-  .form-content button {
-    width: 65%; } }
 .homepage .made-in-usa {
   position: absolute;
   top: 4%;

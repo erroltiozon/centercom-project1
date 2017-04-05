@@ -36,12 +36,37 @@
 				}
 			}
 
+			@include break(tablet){
+				header {
+					width: 60vw;
+				}
+			}
+
+			@include break(phone){
+				header {
+					width: 17em;
+				}
+			}
 
 			.made-in-usa{
 				width: 150px;
 			    left: -1em;
 			    position: absolute;
 			    top: -2%;
+			}
+
+			@include break(tablet){
+				.made-in-usa{
+					top:-1%;
+					width: 120px;
+				}
+			}
+
+			@include break(phone){
+				.made-in-usa{
+					top:-1%;
+					width: 100px;
+				}
 			}
 
 			.form-list {
@@ -72,7 +97,19 @@
 						height: 2.5vw;
 						outline: none;
 				    width: 29vw;
+					}
 
+					@include break(tablet){
+						input{
+							height: 5.5vw;
+							width: 50vw;
+						}
+					}
+					@include break(phone){
+						input{
+							height: 11.5vw;
+							width: 69vw;
+						}
 					}
 
 					textarea{
@@ -81,6 +118,16 @@
 						height: 100px;
 						padding: .5em 1em;
 						width: 29vw;
+					}
+					@include break(tablet){
+						textarea{
+							width: 50vw;
+						}
+					}
+					@include break(phone){
+						textarea{
+							width: 69vw;
+						}
 					}
 				}
 			}
@@ -97,6 +144,17 @@
 
 				&:hover {
 					background: darken($red, 10%);
+				}
+			}
+
+			@include break (tablet){
+				button{
+						width: 45%;
+				}
+			}
+			@include break (phone){
+				button{
+						width: 65%;
 				}
 			}
 
@@ -118,52 +176,52 @@
 	}
 }
 
-@include break(tablet){
-		.form-content {
-					header {
-							width:60vw;
-					}
-					.made-in-usa {
-							left:-1em;
-							top: 1%;
-							width: 120px;
-					}
-					.form-list {
-							input {
-								height: 5.5vw;
-								width: 50vw;
-							}
-							textarea {
-								width: 50vw;
-							}
-					}
-					button{
-						width: 45%;
-					}
-		}
-}
-
-@include break(phone){
-		.form-content {
-					header {
-							width:17em;
-					}
-					.made-in-usa {
-							left:-1em;
-							top: 1%;
-							width: 100px;
-					}
-					.form-list {
-							input {
-								height: 11.5vw;
-								width: 69vw;
-							}
-							textarea {
-								width: 69vw;
-							}
-					}
-					button{
-						width: 65%;
-					}
-		}
-}
+// @include break(tablet){
+// 		.form-content {
+// 					header {
+// 							width:60vw;
+// 					}
+// 					.made-in-usa {
+// 							left:-1em;
+// 							top: 1%;
+// 							width: 120px;
+// 					}
+// 					.form-list {
+// 							input {
+// 								height: 5.5vw;
+// 								width: 50vw;
+// 							}
+// 							textarea {
+// 								width: 50vw;
+// 							}
+// 					}
+// 					button{
+// 						width: 45%;
+// 					}
+// 		}
+// }
+//
+// @include break(phone){
+// 		.form-content {
+// 					header {
+// 							width:17em;
+// 					}
+// 					.made-in-usa {
+// 							left:-1em;
+// 							top: 1%;
+// 							width: 100px;
+// 					}
+// 					.form-list {
+// 							input {
+// 								height: 11.5vw;
+// 								width: 69vw;
+// 							}
+// 							textarea {
+// 								width: 69vw;
+// 							}
+// 					}
+// 					button{
+// 						width: 65%;
+// 					}
+// 		}
+// }
